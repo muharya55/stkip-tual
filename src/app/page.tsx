@@ -371,8 +371,14 @@ export default function Home() {
           data-slides-per-view={1}
           data-loop="true"
           data-pagination="edm-data-pagination-outuni"
-          data-breakpoints='{"1200": {"slidesPerView": 3, spaceBetween": 30}, 1024": {"slidesPerView": 3, spaceBetween": 30}, 768": {"slidesPerView": 3, spaceBetween": 30}, 576": {"slidesPerView": 2, spaceBetween": 30}}'
+          data-breakpoints='{
+            "1200": { "slidesPerView": 3, "spaceBetween": 30 },
+            "1024": { "slidesPerView": 3, "spaceBetween": 30 },
+            "768": { "slidesPerView": 3, "spaceBetween": 30 },
+            "576": { "slidesPerView": 2, "spaceBetween": 30 }
+          }'
         >
+
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
@@ -713,16 +719,20 @@ export default function Home() {
           className="position-relative swiper-style-2 wow fadeInUp"
           data-wow-duration="1.5s"
         >
-          <div
-            className="swiper edm-swiper"
-            data-slides-per-view={1}
-            data-space-between={30}
-            data-button-next="edm-swiper-button-next-lnuni"
-            data-button-prev="edm-swiper-button-prev-lnuni"
-            data-loop="true"
-            data-pagination="edm-data-pagination-lnuni"
-            data-breakpoints='{"1024": {"slidesPerView": 3, spaceBetween": 30}, 768": {"slidesPerView": 3, spaceBetween": 30}, 576": {"slidesPerView": 2, spaceBetween": 30}}'
-          >
+         <div
+          className="swiper edm-swiper"
+          data-slides-per-view={1}
+          data-space-between={30}
+          data-button-next="edm-swiper-button-next-lnuni"
+          data-button-prev="edm-swiper-button-prev-lnuni"
+          data-loop="true"
+          data-pagination="edm-data-pagination-lnuni"
+          data-breakpoints='{
+            "1024": { "slidesPerView": 3, "spaceBetween": 30 },
+            "768": { "slidesPerView": 3, "spaceBetween": 30 },
+            "576": { "slidesPerView": 2, "spaceBetween": 30 }
+          }'
+        >
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <div className="latest-new-layout-1__items">
