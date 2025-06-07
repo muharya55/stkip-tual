@@ -1,3 +1,5 @@
+import Image from "next/image"
+
  
 const StrukturOrganisasi = () => {
   return (
@@ -8,7 +10,7 @@ const StrukturOrganisasi = () => {
         <div className="events-details__wrapper d-flex flex-wrap">
                       {/* src="../images/logo/bg-univ.jpeg" */}
 
-           <img alt="Struktur" className="mt-2 mb-5" src="../images/struktur-organisasi.jpg" width="100%"></img>
+           <Image alt="Struktur" className="mt-2 mb-5" src="../images/struktur-organisasi.jpg"  />
         </div>
     </>
   )

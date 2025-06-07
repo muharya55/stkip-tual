@@ -2,6 +2,7 @@
 import React from "react";
 import Script from "next/script";
 import Link from "next/link";   
+import Image from "next/image";
 
 export default function RootLayout({
   children,
@@ -61,13 +62,13 @@ export default function RootLayout({
             <div className="notification__mail d-flex align-items-center gap-5px">
               <i className="iconify fs-18" data-icon="tabler:mail-check" />
               <span className="d-none d-xl-block">
-                <a
+                <Link
                   href="https://html.thimpress.com/cdn-cgi/l/email-protection"
                   className="__cf_email__"
                   data-cfemail="04676b6a7065677044706c6d6974766177772a676b69"
                 >
                   [email&nbsp;protected]
-                </a>
+                </Link>
               </span>
             </div>
             <div className="notification__acc d-flex align-items-center gap-5px">
@@ -83,42 +84,42 @@ export default function RootLayout({
           <div className="d-flex align-items-center justify-content-end">
             <ul className="notification-page d-flex align-items-center">
               <li className="d-none d-xl-block">
-                <a href="#">Campus</a>
+                <Link href="#">Campus</Link>
               </li>
               <li className="d-none d-xl-block">
-                <a href="#">Research</a>
+                <Link href="#">Research</Link>
               </li>
               <li className="d-none d-xl-block">
-                <a href="#">Community</a>
+                <Link href="#">Community</Link>
               </li>
               <li className="d-none d-xl-block">
-                <a href="#">Faculty &amp; staff</a>
+                <Link href="#">Faculty &amp; staff</Link>
               </li>
               <li className="d-none d-xl-block">
-                <a href="#">Alumni</a>
+                <Link href="#">Alumni</Link>
               </li>
             </ul>
             <ul className="notification-auth d-flex align-items-center">
               {/* <li>
-                <a href="#" className="search__icon">
+                <Link href="#" className="search__icon">
                   <i
                     className="iconify fs-18 cursor-pointer"
                     data-icon="iconamoon:search"
                   />
-                </a>
+                </Link>
               </li> */}
               <li>
-                <a href="#" className="handle-register">
+                <Link href="#" className="handle-register">
                   <i
                     className="iconify fs-18"
                     data-icon="ant-design:user-add-outlined"
                   />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="handle-login">
+                <Link href="#" className="handle-login">
                   <i className="iconify fs-18" data-icon="lucide:user" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -132,7 +133,7 @@ export default function RootLayout({
     <div className="container demo-submenu-rsv1">
       <div className="col-md-2 uni-navbar__logo">
         <Link href="/">
-          <img
+          <Image
             src="../images/logo/bg-univ.jpeg"
             style={{ backgroundColor: "#000" }}
             alt="Logo"
@@ -148,13 +149,13 @@ export default function RootLayout({
           <div className="">
           <ul className="navbar-nav gap-22px justify-content-center">
               <li className="nav-item main-dropdown-menu">
-                <a href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
                   <>
                   <span className="">Tentang STKIP</span>
                   
                   <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
                   </>
-                </a>
+                </Link>
                 <ul className="main-dropdown-menu__sub">
                   <li className="main-dropdown-menu__sub_items"><Link href="/tentang/sejarah">Sejarah Singkat</Link></li>
                   <li className="main-dropdown-menu__sub_items"><Link href="/tentang/visimisi">Visi, Misi, Tujuan dan Sasaran</Link></li>
@@ -164,58 +165,58 @@ export default function RootLayout({
               </li>
 
               <li className="nav-item main-dropdown-menu">
-                <a href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Akademik
                   <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
-                </a>
+                </Link>
                 <ul className="main-dropdown-menu__sub">
-                  <li className="main-dropdown-menu__sub_items"><a href="#">Prodi</a></li>
-                  <li className="main-dropdown-menu__sub_items"><a href="#">Informasi Biaya Pendidikan</a></li>
-                  <li className="main-dropdown-menu__sub_items"><a href="#">Kalender Akademik</a></li>
-                  <li className="main-dropdown-menu__sub_items"><a href="#">Buku Pedoman Akademik</a></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">Prodi</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">Informasi Biaya Pendidikan</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">Kalender Akademik</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">Buku Pedoman Akademik</Link></li>
                 </ul>
               </li>
 
               <li className="nav-item main-dropdown-menu">
-                <a href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Lembaga
                   <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
-                </a>
+                </Link>
                 <ul className="main-dropdown-menu__sub">
-                  <li className="main-dropdown-menu__sub_items"><a href="#">LPM</a></li>
-                  <li className="main-dropdown-menu__sub_items"><a href="#">LP2M</a></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">LPM</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">LP2M</Link></li>
                 </ul>
               </li>
 
               <li className="nav-item main-dropdown-menu">
-                <a href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Biro
                   <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
-                </a>
+                </Link>
                 <ul className="main-dropdown-menu__sub">
-                  <li className="main-dropdown-menu__sub_items"><a href="#">Akademik</a></li>
-                  <li className="main-dropdown-menu__sub_items"><a href="#">Keuangan</a></li>
-                  <li className="main-dropdown-menu__sub_items"><a href="#">TI</a></li>
-                  <li className="main-dropdown-menu__sub_items"><a href="#">SDM</a></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">Akademik</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">Keuangan</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">TI</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">SDM</Link></li>
                 </ul>
               </li>
 
               <li className="nav-item">
-                <a href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Kemahasiswaan
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Download
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a href="contact.html" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="contact.html" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Kontak
-                </a>
+                </Link>
               </li>
             </ul>
 
@@ -226,20 +227,20 @@ export default function RootLayout({
         <ul className="notification-auth d-flex align-items-center justify-content-end">
            {/* <ul className="notification-auth d-flex align-items-center">
               <li>
-                <a href="#" className="search__icon">
+                <Link href="#" className="search__icon">
                   <i
                     className="iconify fs-24 cursor-pointer"
                     data-icon="iconamoon:search"
                   />
-                </a>
+                </Link>
               </li>
             </ul> */}
-          <a href="#" className="uni-button transition-all search__icon">
+          <Link href="#" className="uni-button transition-all search__icon">
              <i
                     className="iconify fs-24 cursor-pointer"
                     data-icon="iconamoon:search"
                   />
-          </a>
+          </Link>
         </ul>
       </div>
     </div>
@@ -251,14 +252,14 @@ export default function RootLayout({
     <div className="container">
       <div className="row">
         <div className="col-12 col-lg-4 mb-30px mb-lg-0">
-          <a href="idex.html">
-            <img
+          <Link href="idex.html">
+            <Image
               src="../images/logo/bg-univ.jpeg"
               alt="logo"
               style={{ backgroundColor: "#000" }}
               className="section-footer_logo mb-40px"
             />
-          </a>
+          </Link>
           <div className="footer-layout-1__info d-flex align-items-center gap-5px mb-10px">
             <i className="iconify fs-20" data-icon="iconoir:phone" />
             <span className="d-block">800 388 80 90</span>
@@ -270,35 +271,35 @@ export default function RootLayout({
           <div className="footer-layout-1__info d-flex align-items-center gap-5px mb-20px">
             <i className="iconify fs-20" data-icon="tabler:mail-check" />
             <span className="d-block">
-              <a
+              <Link
                 href="https://html.thimpress.com/cdn-cgi/l/email-protection"
                 className="__cf_email__"
                 data-cfemail="81e2eeeff5e0e2f5c1e4e5f4ece0afe2eeec"
               >
                 [email&nbsp;protected]
-              </a>
+              </Link>
             </span>
           </div>
           <ul className="d-flex align-items-center gap-15px">
             <li>
-              <a href="#" className="transition-all">
+              <Link href="#" className="transition-all">
                 <i className="iconify fs-24" data-icon="circum:facebook" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="transition-all">
+              <Link href="#" className="transition-all">
                 <i className="iconify fs-24" data-icon="ri:twitter-x-fill" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="transition-all">
+              <Link href="#" className="transition-all">
                 <i className="iconify fs-24" data-icon="ph:pinterest-logo" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="transition-all">
+              <Link href="#" className="transition-all">
                 <i className="iconify fs-24" data-icon="ph:instagram-logo" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -308,24 +309,24 @@ export default function RootLayout({
           </h6>
           <ul>
             <li className="mb-10px">
-              <a className="transition-all" href="about-us.html">
+              <Link className="transition-all" href="about-us.html">
                 About
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="blog.html">
+              <Link className="transition-all" href="blog.html">
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="contact.html">
+              <Link className="transition-all" href="contact.html">
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="becom-an-instructors.html">
+              <Link className="transition-all" href="becom-an-instructors.html">
                 Become a Teacher
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -335,24 +336,24 @@ export default function RootLayout({
           </h6>
           <ul>
             <li className="mb-10px">
-              <a className="transition-all" href="courses-category.html">
+              <Link className="transition-all" href="courses-category.html">
                 Courses
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="events.html">
+              <Link className="transition-all" href="events.html">
                 Events
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="gallery.html">
+              <Link className="transition-all" href="gallery.html">
                 Gallery
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="faqs.html">
+              <Link className="transition-all" href="faqs.html">
                 FAQs
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -362,24 +363,24 @@ export default function RootLayout({
           </h6>
           <ul>
             <li className="mb-10px">
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 Documentation
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 Forums
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 Language Packs
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 Release Status
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -389,24 +390,24 @@ export default function RootLayout({
           </h6>
           <ul>
             <li className="mb-10px">
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 WordPress
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 LearnPress
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 WooCommerce
-              </a>
+              </Link>
             </li>
             <li className="mb-10px">
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 bbPress
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -416,24 +417,24 @@ export default function RootLayout({
           <p className="transition-all mb-20px mb-md-0"> </p>
           <ul className="d-flex align-items-center gap-30px">
             <li>
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 Privacy
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 Terms
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 Sitemap
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition-all" href="#">
+              <Link className="transition-all" href="#">
                 Purchase
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -441,12 +442,12 @@ export default function RootLayout({
     </div>
   </footer>
   <div className="scroll-progress d-none">
-    <a href="#" className="scroll-progress__link">
+    <Link href="#" className="scroll-progress__link">
       <span className="iconify fs-18" data-icon="grommet-icons:up" />
       <span className="scroll-progress__line scroll-progress__uni">
         <span id="scr-progress" className="" />
       </span>
-    </a>
+    </Link>
   </div>
   <div className="search-wrapper">
     <div className="search-overlay" />
@@ -502,12 +503,12 @@ export default function RootLayout({
                 <label className="d-flex align-items-center gap-5px cursor-pointer">
                   <input type="checkbox" name="remember_me" /> Remember Me
                 </label>
-                <a
+                <Link
                   href="lostpassword.html"
                   className="form-login__lost transition-all"
                 >
                   Lost your password?
-                </a>
+                </Link>
               </div>
               <input
                 type="submit"
@@ -517,12 +518,12 @@ export default function RootLayout({
             </form>
             <div className="d-flex align-items-center justify-content-center gap-10px mb-10px">
               <p>Not a member yet?</p>
-              <a
+              <Link
                 href="#"
                 className="form-login__register transition-all handle-register"
               >
                 Register now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -567,12 +568,12 @@ export default function RootLayout({
             </form>
             <div className="d-flex align-items-center justify-content-center gap-10px mb-10px">
               <p>Are you a member?</p>
-              <a
+              <Link
                 href="#"
                 className="form-register__register transition-all handle-login"
               >
                 Login now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

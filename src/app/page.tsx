@@ -1,3 +1,5 @@
+import Image from "next/image";
+
  
 export default function Home() {
   return (
@@ -83,7 +85,7 @@ export default function Home() {
       <div className="row">
         <div className="col-md-6">
           <div className="uni-welcome-image">
-            <img
+            <Image
               src="../images/university/welcome.jpg"
               alt=""
               className="img-fluid"
@@ -116,7 +118,7 @@ export default function Home() {
         <div className="col-12 col-lg-4">
           <div className="uni-mixed-welcome">
             <h4 className="fw-medium mb-20px">Welcome</h4>
-            <img
+            <Image
               src="../images/university/mixed-welcome.jpg"
               alt=""
               className="img-fluid mb-20px"
@@ -166,7 +168,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="events-layout-1__image">
-                <img
+                <Image
                   src="../images/events/events-01.png"
                   alt="Applying Natural Laws to Technology and Society"
                 />
@@ -205,7 +207,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="events-layout-1__image">
-                <img
+                <Image
                   src="../images/events/events-02.png"
                   alt="Education Autumn Tour"
                 />
@@ -243,7 +245,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="events-layout-1__image">
-                <img
+                <Image
                   src="../images/events/events-08.png"
                   alt="Managing Time for Study"
                 />
@@ -364,7 +366,7 @@ export default function Home() {
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
-                <img
+                <Image
                   src="../images/testimonial/testimonial-01.png"
                   alt=""
                   className="mb-20px"
@@ -379,7 +381,7 @@ export default function Home() {
             </div>
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
-                <img
+                <Image
                   src="../images/testimonial/testimonial-02.png"
                   alt=""
                   className="mb-20px"
@@ -394,7 +396,7 @@ export default function Home() {
             </div>
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
-                <img
+                <Image
                   src="../images/testimonial/testimonial-03.png"
                   alt=""
                   className="mb-20px"
@@ -409,7 +411,7 @@ export default function Home() {
             </div>
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
-                <img
+                <Image
                   src="../images/testimonial/testimonial-04.png"
                   alt=""
                   className="mb-20px"
@@ -440,7 +442,7 @@ export default function Home() {
       <div className="row gy-30px">
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-01.png"
               alt="rankings icon"
               className="img-fluid"
@@ -453,7 +455,7 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-02.png"
               alt="rankings icon"
               className="img-fluid"
@@ -466,7 +468,7 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-03.png"
               alt="rankings icon"
               className="img-fluid"
@@ -479,7 +481,7 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-04.png"
               alt="rankings icon"
               className="img-fluid"
@@ -492,7 +494,7 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-05.png"
               alt="rankings icon"
               className="img-fluid"
@@ -505,7 +507,7 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-06.png"
               alt="rankings icon"
               className="img-fluid"
@@ -518,7 +520,7 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-07.png"
               alt="rankings icon"
               className="img-fluid"
@@ -531,7 +533,7 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-08.png"
               alt="rankings icon"
               className="img-fluid"
@@ -544,7 +546,7 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <img
+            <Image
               src="../images/university/ranking-09.png"
               alt="rankings icon"
               className="img-fluid"
@@ -568,7 +570,7 @@ export default function Home() {
         <div className="col-12 col-sm-6 col-md-6 col-lg-4">
           <div className="campus-items">
             <a href="#">
-              <img
+              <Image
                 src="../images/latest-new/latest-new-01.png"
                 alt="campus of the image"
               />
@@ -595,7 +597,7 @@ export default function Home() {
         <div className="col-12 col-sm-6 col-md-6 col-lg-4">
           <div className="campus-items">
             <a href="#">
-              <img
+              <Image
                 src="../images/latest-new/latest-new-02.png"
                 alt="campus of the image"
               />
@@ -622,7 +624,7 @@ export default function Home() {
         <div className="col-12 col-sm-6 col-md-6 col-lg-4">
           <div className="campus-items">
             <a href="#">
-              <img
+              <Image
                 src="../images/latest-new/latest-new-03.png"
                 alt="campus of the image"
               />
@@ -684,7 +686,7 @@ export default function Home() {
                   <div className="latest-new-layout-1__thumbnail">
                     <figure className="position-relative">
                       <a href="blog-details.html" title="LMS WordPress plugin">
-                        <img
+                        <Image
                           src="../images/latest-new/latest-new-large-01.png"
                           alt="LMS WordPress plugin"
                         />
@@ -738,7 +740,7 @@ export default function Home() {
                         href="blog-details.html"
                         title="Admin earns scholarship"
                       >
-                        <img
+                        <Image
                           src="../images/latest-new/latest-new-large-02.png"
                           alt="Admin earns scholarship"
                         />
@@ -792,7 +794,7 @@ export default function Home() {
                         href="blog-details.html"
                         title="Forensic team earns several"
                       >
-                        <img
+                        <Image
                           src="../images/latest-new/latest-new-large-03.png"
                           alt="Forensic team earns several"
                         />
@@ -843,7 +845,7 @@ export default function Home() {
                   <div className="latest-new-layout-1__thumbnail">
                     <figure className="position-relative">
                       <a href="blog-details.html" title="Working">
-                        <img
+                        <Image
                           src="../images/latest-new/latest-new-large-04.png"
                           alt="Working"
                         />
@@ -895,7 +897,7 @@ export default function Home() {
                         href="blog-details.html"
                         title="Introducing: Dr. Deniz Zeynep"
                       >
-                        <img
+                        <Image
                           src="../images/latest-new/latest-new-large-01.png"
                           alt="Introducing: Dr. Deniz Zeynep"
                         />
@@ -950,7 +952,7 @@ export default function Home() {
   </section>
   <section className="uni-subscribe position-relative subscribe-layout-1 pt-80px pb-80px">
     <div className="container">
-      <img
+      <Image
         src="../images/mail-sank.png"
         alt="mail-sank"
         className="subscribe-layout-1__sank"
