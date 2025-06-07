@@ -8,9 +8,9 @@ const StrukturOrganisasi = () => {
           Struktur Organisi STKIP TUAL
         </h1>
         <div className="events-details__wrapper d-flex flex-wrap">
-                      {/* src="../images/logo/bg-univ.jpeg" */}
-
-           <Image alt="Struktur" className="mt-2 mb-5" src="../images/struktur-organisasi.jpg"  />
+ 
+           <Image  width={2000}
+              height={1000} alt="Struktur" className="mt-2 mb-5" src="/images/struktur-organisasi.jpg"  />
         </div>
     </>
   )

@@ -134,9 +134,12 @@ export default function RootLayout({
       <div className="col-md-2 uni-navbar__logo">
         <Link href="/">
           <Image
-            src="../images/logo/bg-univ.jpeg"
+              width={200}
+              height={100}
+            src="/images/logo/bg-univ.jpeg"
             style={{ backgroundColor: "#000" }}
             alt="Logo"
+            
             className="navbar__logo bg-transparent w-50"
           />
         </Link>
@@ -254,8 +257,11 @@ export default function RootLayout({
         <div className="col-12 col-lg-4 mb-30px mb-lg-0">
           <Link href="idex.html">
             <Image
-              src="../images/logo/bg-univ.jpeg"
+      
+               src="/images/logo/bg-univ.jpeg"
               alt="logo"
+               width={200}
+              height={100}
               style={{ backgroundColor: "#000" }}
               className="section-footer_logo mb-40px"
             />

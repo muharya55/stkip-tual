@@ -86,7 +86,9 @@ export default function Home() {
         <div className="col-md-6">
           <div className="uni-welcome-image">
             <Image
-              src="../images/university/welcome.jpg"
+             width={200}
+              height={100}
+              src="/images/university/welcome.jpg"
               alt=""
               className="img-fluid"
             />
@@ -96,7 +98,7 @@ export default function Home() {
           <div className="uni-welcome-info text-center">
             <h4 className="fw-medium mb-20px">Sambutan Rektor</h4>
             <p>
-              “Universitas Sari Mutiara Indonesia (USM-Indonesia) di dirikan
+              Universitas Sari Mutiara Indonesia (USM-Indonesia) di dirikan
               dengan nilai-nilai dasar (Core Values) Spriritualisme,
               Intelektualisme, Profesionalisme, Nasionalisme dan Globalisme.
               Nilai-nilai inilah yang mendasari pelaksanaan Tridharma Perguruan
@@ -105,7 +107,7 @@ export default function Home() {
               cita-cita Bangsa Indonesia dalam menciptakan manusia seutuhnya,
               bukan hanya memiliki intelektulitas, akan tetapi kreatif,
               inovatif, mempunyai jiwa kewirausahaan, berbudaya, berkarakter,
-              serta cinta terhadap bangsa dan negara.”
+              serta cinta terhadap bangsa dan negara.
             </p>
           </div>
         </div>
@@ -119,7 +121,9 @@ export default function Home() {
           <div className="uni-mixed-welcome">
             <h4 className="fw-medium mb-20px">Welcome</h4>
             <Image
-              src="../images/university/mixed-welcome.jpg"
+             width={200}
+              height={100}
+              src="/images/university/mixed-welcome.jpg"
               alt=""
               className="img-fluid mb-20px"
             />
@@ -169,7 +173,9 @@ export default function Home() {
               </div>
               <div className="events-layout-1__image">
                 <Image
-                  src="../images/events/events-01.png"
+                 width={200}
+                  height={100}
+                  src="/images/events/events-01.png"
                   alt="Applying Natural Laws to Technology and Society"
                 />
               </div>
@@ -202,13 +208,15 @@ export default function Home() {
                 </div>
                 <p className="events-layout-1__content-brief">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  typesetting industry. Lorem Ipsum has been the industrys
                   standard dummy text ever since the
                 </p>
               </div>
               <div className="events-layout-1__image">
                 <Image
-                  src="../images/events/events-02.png"
+ width={200}
+              height={100}
+                  src="/images/events/events-02.png"
                   alt="Education Autumn Tour"
                 />
               </div>
@@ -246,7 +254,9 @@ export default function Home() {
               </div>
               <div className="events-layout-1__image">
                 <Image
-                  src="../images/events/events-08.png"
+ width={200}
+              height={100}
+                  src="/images/events/events-08.png"
                   alt="Managing Time for Study"
                 />
               </div>
@@ -361,50 +371,56 @@ export default function Home() {
           data-slides-per-view={1}
           data-loop="true"
           data-pagination="edm-data-pagination-outuni"
-          data-breakpoints='{"1200": {"slidesPerView": 3, "spaceBetween": 30}, "1024": {"slidesPerView": 3, "spaceBetween": 30}, "768": {"slidesPerView": 3, "spaceBetween": 30}, "576": {"slidesPerView": 2, "spaceBetween": 30}}'
+          data-breakpoints='{"1200": {"slidesPerView": 3, spaceBetween": 30}, 1024": {"slidesPerView": 3, spaceBetween": 30}, 768": {"slidesPerView": 3, spaceBetween": 30}, 576": {"slidesPerView": 2, spaceBetween": 30}}'
         >
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
                 <Image
-                  src="../images/testimonial/testimonial-01.png"
+ width={200}
+              height={100}
+                  src="/images/testimonial/testimonial-01.png"
                   alt=""
                   className="mb-20px"
                 />
                 <h6 className="fw-semibold fs-16 mb-5px">Susan Jackson</h6>
                 <p className="mb-5px">WordPress Developer</p>
                 <p className="line-clamp-3">
-                  "Pierre is a Fullbright Scholar working to drive change within
-                  indigenous communities."
+                  Pierre is a Fullbright Scholar working to drive change within
+                  indigenous communities.
                 </p>
               </div>
             </div>
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
                 <Image
-                  src="../images/testimonial/testimonial-02.png"
-                  alt=""
+ width={200}
+              height={100}
+                  src="/images/testimonial/testimonial-02.png"
+                  alt="aaaa"
                   className="mb-20px"
                 />
                 <h6 className="fw-semibold fs-16 mb-5px">Pierre Hackett</h6>
                 <p className="mb-5px">Bachelor of Business / MBA</p>
                 <p className="line-clamp-3">
-                  "Leah is the founder, leader and manager of the most
-                  successful private practice dietetic company across American."
+                  Leah is the founder, leader and manager of the most
+                  successful private practice dietetic company across American.
                 </p>
               </div>
             </div>
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
                 <Image
-                  src="../images/testimonial/testimonial-03.png"
+ width={200}
+              height={100}
+                  src="/images/testimonial/testimonial-03.png"
                   alt=""
                   className="mb-20px"
                 />
                 <h6 className="fw-semibold fs-16 mb-5px">Victor Hansen</h6>
                 <p className="mb-5px">Bachelor of Information Technology</p>
                 <p className="line-clamp-3">
-                  "Tyson is a serial entrepreneur taking his passion projects
+                  Tyson is a serial entrepreneur taking his passion projects
                   and turning them into successful businesses."
                 </p>
               </div>
@@ -412,15 +428,17 @@ export default function Home() {
             <div className="swiper-slide">
               <div className="testimonials-info text-center">
                 <Image
-                  src="../images/testimonial/testimonial-04.png"
+ width={200}
+              height={100}
+                  src="/images/testimonial/testimonial-04.png"
                   alt=""
                   className="mb-20px"
                 />
                 <h6 className="fw-semibold fs-16 mb-5px">Leah Steven</h6>
                 <p className="mb-5px">Master of Nutrition and Dietetics</p>
                 <p className="line-clamp-3">
-                  "Leah is the founder, leader and manager of the most
-                  successful private practice dietetic company across American."
+                  Leah is the founder, leader and manager of the most
+                  successful private practice dietetic company across American.
                 </p>
               </div>
             </div>
@@ -443,7 +461,9 @@ export default function Home() {
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
             <Image
-              src="../images/university/ranking-01.png"
+             width={200}
+              height={100}
+              src="/images/university/ranking-01.png"
               alt="rankings icon"
               className="img-fluid"
             />
@@ -455,8 +475,10 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <Image
-              src="../images/university/ranking-02.png"
+             <Image
+ width={200}
+              height={100}
+              src="/images/university/ranking-02.png"
               alt="rankings icon"
               className="img-fluid"
             />
@@ -468,8 +490,10 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <Image
-              src="../images/university/ranking-03.png"
+             <Image
+ width={200}
+              height={100}
+              src="/images/university/ranking-03.png"
               alt="rankings icon"
               className="img-fluid"
             />
@@ -481,8 +505,10 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <Image
-              src="../images/university/ranking-04.png"
+             <Image
+ width={200}
+              height={100}
+              src="/images/university/ranking-04.png"
               alt="rankings icon"
               className="img-fluid"
             />
@@ -494,8 +520,10 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <Image
-              src="../images/university/ranking-05.png"
+             <Image
+ width={200}
+              height={100}
+              src="/images/university/ranking-05.png"
               alt="rankings icon"
               className="img-fluid"
             />
@@ -507,8 +535,10 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <Image
-              src="../images/university/ranking-06.png"
+             <Image
+ width={200}
+              height={100}
+              src="/images/university/ranking-06.png"
               alt="rankings icon"
               className="img-fluid"
             />
@@ -520,8 +550,10 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <Image
-              src="../images/university/ranking-07.png"
+             <Image
+ width={200}
+              height={100}
+              src="/images/university/ranking-07.png"
               alt="rankings icon"
               className="img-fluid"
             />
@@ -533,8 +565,10 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <Image
-              src="../images/university/ranking-08.png"
+             <Image
+ width={200}
+              height={100}
+              src="/images/university/ranking-08.png"
               alt="rankings icon"
               className="img-fluid"
             />
@@ -546,14 +580,16 @@ export default function Home() {
         </div>
         <div className="col-md-4">
           <div className="rankings-item p-20px d-flex gap-30px">
-            <Image
-              src="../images/university/ranking-09.png"
+             <Image
+ width={200}
+              height={100}
+              src="/images/university/ranking-09.png"
               alt="rankings icon"
               className="img-fluid"
             />
             <div className="rankings-item-box">
               <h5 className="fw-bold mb-5px">10th</h5>
-              <p>QS World’s Most Photogenic Universities</p>
+              <p>QS Worlds Most Photogenic Universities</p>
             </div>
           </div>
         </div>
@@ -571,7 +607,10 @@ export default function Home() {
           <div className="campus-items">
             <a href="#">
               <Image
-                src="../images/latest-new/latest-new-01.png"
+              
+              width={200}
+              height={100}
+              src="/images/latest-new/latest-new-01.png"
                 alt="campus of the image"
               />
             </a>
@@ -597,8 +636,10 @@ export default function Home() {
         <div className="col-12 col-sm-6 col-md-6 col-lg-4">
           <div className="campus-items">
             <a href="#">
-              <Image
-                src="../images/latest-new/latest-new-02.png"
+               <Image
+              width={200}
+              height={100}
+              src="/images/latest-new/latest-new-02.png"
                 alt="campus of the image"
               />
             </a>
@@ -624,8 +665,10 @@ export default function Home() {
         <div className="col-12 col-sm-6 col-md-6 col-lg-4">
           <div className="campus-items">
             <a href="#">
-              <Image
-                src="../images/latest-new/latest-new-03.png"
+               <Image
+ width={200}
+              height={100}
+              src="/images/latest-new/latest-new-03.png"
                 alt="campus of the image"
               />
             </a>
@@ -678,7 +721,7 @@ export default function Home() {
             data-button-prev="edm-swiper-button-prev-lnuni"
             data-loop="true"
             data-pagination="edm-data-pagination-lnuni"
-            data-breakpoints='{"1024": {"slidesPerView": 3, "spaceBetween": 30}, "768": {"slidesPerView": 3, "spaceBetween": 30}, "576": {"slidesPerView": 2, "spaceBetween": 30}}'
+            data-breakpoints='{"1024": {"slidesPerView": 3, spaceBetween": 30}, 768": {"slidesPerView": 3, spaceBetween": 30}, 576": {"slidesPerView": 2, spaceBetween": 30}}'
           >
             <div className="swiper-wrapper">
               <div className="swiper-slide">
@@ -686,8 +729,10 @@ export default function Home() {
                   <div className="latest-new-layout-1__thumbnail">
                     <figure className="position-relative">
                       <a href="blog-details.html" title="LMS WordPress plugin">
-                        <Image
-                          src="../images/latest-new/latest-new-large-01.png"
+                         <Image
+ width={200}
+              height={100}
+              src="/images/latest-new/latest-new-large-01.png"
                           alt="LMS WordPress plugin"
                         />
                         <span className="sr-only d-none">
@@ -740,8 +785,10 @@ export default function Home() {
                         href="blog-details.html"
                         title="Admin earns scholarship"
                       >
-                        <Image
-                          src="../images/latest-new/latest-new-large-02.png"
+                         <Image
+ width={200}
+              height={100}
+              src="/images/latest-new/latest-new-large-02.png"
                           alt="Admin earns scholarship"
                         />
                         <span className="sr-only d-none">
@@ -794,8 +841,10 @@ export default function Home() {
                         href="blog-details.html"
                         title="Forensic team earns several"
                       >
-                        <Image
-                          src="../images/latest-new/latest-new-large-03.png"
+                         <Image
+ width={200}
+              height={100}
+              src="/images/latest-new/latest-new-large-03.png"
                           alt="Forensic team earns several"
                         />
                         <span className="sr-only d-none">
@@ -845,8 +894,10 @@ export default function Home() {
                   <div className="latest-new-layout-1__thumbnail">
                     <figure className="position-relative">
                       <a href="blog-details.html" title="Working">
-                        <Image
-                          src="../images/latest-new/latest-new-large-04.png"
+                         <Image
+ width={200}
+              height={100}
+              src="/images/latest-new/latest-new-large-04.png"
                           alt="Working"
                         />
                         <span className="sr-only d-none">Working</span>
@@ -897,8 +948,10 @@ export default function Home() {
                         href="blog-details.html"
                         title="Introducing: Dr. Deniz Zeynep"
                       >
-                        <Image
-                          src="../images/latest-new/latest-new-large-01.png"
+                         <Image
+ width={200}
+              height={100}
+              src="/images/latest-new/latest-new-large-01.png"
                           alt="Introducing: Dr. Deniz Zeynep"
                         />
                         <span className="sr-only d-none">
@@ -952,8 +1005,10 @@ export default function Home() {
   </section>
   <section className="uni-subscribe position-relative subscribe-layout-1 pt-80px pb-80px">
     <div className="container">
-      <Image
-        src="../images/mail-sank.png"
+       <Image
+ width={200}
+              height={100}
+              src="/images/mail-sank.png"
         alt="mail-sank"
         className="subscribe-layout-1__sank"
       />
