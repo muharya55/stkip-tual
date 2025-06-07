@@ -427,7 +427,7 @@ export default function Home() {
                 <p className="mb-5px">Bachelor of Information Technology</p>
                 <p className="line-clamp-3">
                   Tyson is a serial entrepreneur taking his passion projects
-                  and turning them into successful businesses."
+                  and turning them into successful businesses.
                 </p>
               </div>
             </div>
@@ -460,7 +460,7 @@ export default function Home() {
         Our World University Rankings
       </h4>
       <p className="text-center mb-40px">
-        We've achieved an enviable reputation for research and teaching
+        Weve achieved an enviable reputation for research and teaching
         excellence.
       </p>
       <div className="row gy-30px">
