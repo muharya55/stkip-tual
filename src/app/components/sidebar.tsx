@@ -7,12 +7,10 @@ export default function Sidebar() {
   const pathname = usePathname()
 
   const menuItems = [
-    { label: 'Sejarah Singkat', href: '/tentang/sejarah' },
-    { label: 'Visi , Misi , Tujuan dan Sasaran', href: '/tentang/visimisi' },
-    { label: 'Struktur Organisasi', href: '/tentang/struktur-organisasi' },
-    { label: 'Pimpinan', href: '/tentang/pimpinan' },
-    { label: 'Prodi', href: '/akademik/prodi' },
-    { label: 'Informasi Biaya Pendidikan', href: '/akademik/informasi-biaya' },
+    { label: 'Sejarah Singkat', href: '/sejarah' },
+    { label: 'Visi , Misi , Tujuan dan Sasaran', href: '/visimisi' },
+    { label: 'Struktur Organisasi', href: '/struktur-organisasi' },
+    { label: 'Pimpinan', href: '/pimpinan' },
   ]
 
   return (

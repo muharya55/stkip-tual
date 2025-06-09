@@ -1,7 +1,6 @@
 // Swiper Data
 if(document.readyState == 'complete'){
-    console.log('sssss');
-     var edmSwiper = document.querySelectorAll('.edm-swiper');
+    var edmSwiper = document.querySelectorAll('.edm-swiper');
 
     edmSwiper.forEach(function (swiperContainer) {
         var slidesPerView = parseInt(swiperContainer.getAttribute('data-slides-per-view')) || 1;
@@ -16,7 +15,7 @@ if(document.readyState == 'complete'){
         if (swiperContainer.closest('.main-banner, .cls-banner, .uni-banner, .elg-banner') && window.innerWidth <= 1024) {
             autoplayConfig = {
                 autoplay: {
-                    delay: 3000,
+                    delay: 100,
                     disableOnInteraction: false,
                 }
             };

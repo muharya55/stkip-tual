@@ -3,6 +3,8 @@ import React from "react";
 import Script from "next/script";
 import Link from "next/link";   
 import Image from "next/image";
+import HomeClientInit from "./utils/HomeClientInit";
+import Footer from "./section/footer";
 
 export default function RootLayout({
   children,
@@ -13,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
        <head>
 
-      <title>Universitas Sanjaya- The Multipurpose HTML5 Template</title>
+      <title>STKIP EVAV TUAL </title>
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="author" content="ThimPress" />
@@ -46,7 +48,8 @@ export default function RootLayout({
       </head>
      
       <body className='uni-layout'>
-  
+      <HomeClientInit/>
+
     {/* <div id="loading-placeholder" style={{ position: 'fixed', inset: 0, background: '#fff', zIndex: 9999, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       Loading...
     </div> */}
@@ -160,10 +163,10 @@ export default function RootLayout({
                   </>
                 </Link>
                 <ul className="main-dropdown-menu__sub">
-                  <li className="main-dropdown-menu__sub_items"><Link href="/tentang/sejarah">Sejarah Singkat</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="/tentang/visimisi">Visi, Misi, Tujuan dan Sasaran</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="/tentang/struktur-organisasi">Struktur Organisasi</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="/tentang/pimpinan">Pimpinan</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/sejarah">Sejarah Singkat</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/visimisi">Visi, Misi, Tujuan dan Sasaran</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/struktur-organisasi">Struktur Organisasi</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/pimpinan">Pimpinan</Link></li>
                 </ul>
               </li>
 
@@ -251,202 +254,7 @@ export default function RootLayout({
   
   {children}  
 
-  <footer className="section-footer uni-footer footer-layout-1 pt-80px">
-    <div className="container">
-      <div className="row">
-        <div className="col-12 col-lg-4 mb-30px mb-lg-0">
-          <Link href="idex.html">
-            <Image
-      
-               src="/images/logo/bg-univ.jpeg"
-              alt="logo"
-               width={200}
-              height={100}
-              style={{ backgroundColor: "#000" }}
-              className="section-footer_logo mb-40px"
-            />
-          </Link>
-          <div className="footer-layout-1__info d-flex align-items-center gap-5px mb-10px">
-            <i className="iconify fs-20" data-icon="iconoir:phone" />
-            <span className="d-block">800 388 80 90</span>
-          </div>
-          <div className="footer-layout-1__info d-flex align-items-center gap-5px mb-10px">
-            <i className="iconify fs-20" data-icon="akar-icons:location" />
-            <span className="d-block">58 Howard Street #2 San Francisco</span>
-          </div>
-          <div className="footer-layout-1__info d-flex align-items-center gap-5px mb-20px">
-            <i className="iconify fs-20" data-icon="tabler:mail-check" />
-            <span className="d-block">
-              <Link
-                href="https://html.thimpress.com/cdn-cgi/l/email-protection"
-                className="__cf_email__"
-                data-cfemail="81e2eeeff5e0e2f5c1e4e5f4ece0afe2eeec"
-              >
-                [email&nbsp;protected]
-              </Link>
-            </span>
-          </div>
-          <ul className="d-flex align-items-center gap-15px">
-            <li>
-              <Link href="#" className="transition-all">
-                <i className="iconify fs-24" data-icon="circum:facebook" />
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="transition-all">
-                <i className="iconify fs-24" data-icon="ri:twitter-x-fill" />
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="transition-all">
-                <i className="iconify fs-24" data-icon="ph:pinterest-logo" />
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="transition-all">
-                <i className="iconify fs-24" data-icon="ph:instagram-logo" />
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-6 col-lg-2 mb-20px mb-lg-0">
-          <h6 className="footer__title fw-semibold text-white mb-40px">
-            Company
-          </h6>
-          <ul>
-            <li className="mb-10px">
-              <Link className="transition-all" href="about-us.html">
-                About
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="blog.html">
-                Blog
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="contact.html">
-                Contact
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="becom-an-instructors.html">
-                Become a Teacher
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-6 col-lg-2 mb-20px mb-lg-0">
-          <h6 className="footer__title fw-semibold text-white mb-40px">
-            Links
-          </h6>
-          <ul>
-            <li className="mb-10px">
-              <Link className="transition-all" href="courses-category.html">
-                Courses
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="events.html">
-                Events
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="gallery.html">
-                Gallery
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="faqs.html">
-                FAQs
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-6 col-lg-2 mb-20px mb-lg-0">
-          <h6 className="footer__title fw-semibold text-white mb-40px">
-            Support
-          </h6>
-          <ul>
-            <li className="mb-10px">
-              <Link className="transition-all" href="#">
-                Documentation
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="#">
-                Forums
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="#">
-                Language Packs
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="#">
-                Release Status
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-6 col-lg-2">
-          <h6 className="footer__title fw-semibold text-white mb-40px">
-            Recommend
-          </h6>
-          <ul>
-            <li className="mb-10px">
-              <Link className="transition-all" href="#">
-                WordPress
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="#">
-                LearnPress
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="#">
-                WooCommerce
-              </Link>
-            </li>
-            <li className="mb-10px">
-              <Link className="transition-all" href="#">
-                bbPress
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="row">
-        <div className="footer-layout-1__bottom d-flex flex-wrap align-items-center justify-content-between mt-50px pt-30px pb-30px">
-          <p className="transition-all mb-20px mb-md-0"> </p>
-          <ul className="d-flex align-items-center gap-30px">
-            <li>
-              <Link className="transition-all" href="#">
-                Privacy
-              </Link>
-            </li>
-            <li>
-              <Link className="transition-all" href="#">
-                Terms
-              </Link>
-            </li>
-            <li>
-              <Link className="transition-all" href="#">
-                Sitemap
-              </Link>
-            </li>
-            <li>
-              <Link className="transition-all" href="#">
-                Purchase
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <Footer></Footer>
   <div className="scroll-progress d-none">
     <Link href="#" className="scroll-progress__link">
       <span className="iconify fs-18" data-icon="grommet-icons:up" />

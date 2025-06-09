@@ -1,7 +1,6 @@
  
 if(document.readyState == 'complete'){
-    console.log('sssss');
-    
+     
     
     // Tab category
     var categoryBtn = document.querySelectorAll(".category__btn");

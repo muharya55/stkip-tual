@@ -1,11 +1,8 @@
  
  
-console.log('console1');
 // var categoryBtn = document.querySelectorAll(".category__btn");
-console.log(document.readyState);
    
 if(document.readyState == 'complete'){
-    console.log('abcdf');
      var categoryBtn = document.querySelectorAll(".category__btn");
 
     function handleTabClick(event) {
@@ -1054,8 +1051,7 @@ if(document.readyState == 'complete'){
 
 }
 document.addEventListener("DOMContentLoaded", function () {
-    console.log('console2');
-    // Tab category
+     // Tab category
     
    
 });
