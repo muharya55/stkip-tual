@@ -1,7 +1,3 @@
-import Image from "next/image";
-import HomeClientInit from "./utils/HomeClientInit";
-import AutoClickSwiperBullets from "./components/AutoClickSwiperBullets";
-import Alumni from "./section/alumni";
 import AlumniSection from "./section/alumni";
 import BeritaSection from "./section/berita";
 
@@ -10,8 +6,7 @@ export default function Home() {
   
   return (
     < >
-    {/* <HomeClientInit/> */}
-<div className="">
+ <div className="">
 
 
   <section className="uni-banner position-relative">

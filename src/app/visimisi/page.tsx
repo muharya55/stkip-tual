@@ -1,5 +1,4 @@
 import Sidebar from 'app/components/sidebar'
-import Image from 'next/image'
  
 const StrukturOrganisasi = () => {
   return (

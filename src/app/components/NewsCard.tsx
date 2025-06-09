@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-const NewsCard = ({ image, title, date, excerpt, link }: any) => {
+type NewsCardProps = {
+  image: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  link: string;
+};
+const NewsCard = ({ image, title, date, excerpt, link }: NewsCardProps) => {
   return (
     <div className="news-card">
       <Image src={image} alt={title} width={300} height={180} />

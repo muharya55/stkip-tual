@@ -8,7 +8,7 @@ useEffect(() => {
 
     if (bullets.length > 0) {
       let index = 0;
-      const autoInterval = setInterval(() => {
+      setInterval(() => {
         bullets[index].click();
         index = (index + 1) % bullets.length;
       }, 1500);
