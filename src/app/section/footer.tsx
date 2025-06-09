@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="col-12 col-lg-4 mb-30px mb-lg-0">
             <Link href="/">
               <Image
-                src="/images/logo/bg-univ-2.png"
+                src="/images/logo/bg-univ-2.PNG"
                 alt="logo"
                 width={200}
                 height={100}
