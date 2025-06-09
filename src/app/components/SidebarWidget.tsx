@@ -3,7 +3,8 @@ type SidebarWidgetProps = {
   items: string[];
 };
 
-const SidebarWidget = ({ title, items }: SidebarWidgetProps) => {  return (
+const SidebarWidget = ({ title, items }: SidebarWidgetProps) => {  
+  return (
     <div className="sidebar-widget">
       <h5>{title}</h5>
       <ul>
