@@ -67,34 +67,33 @@ const Kontak = () => {
             </div>
             <div className="contact-box_right">
               <h5 className="fw-semibold text-white mb-20px">
-                Didn't Find The Answer?
+                Didnt Find The Answer?
               </h5>
               <form className="contact-box_right_form" id="contactForm">
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Name *"
+                  placeholder="Name "
                 />
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Email *"
+                  placeholder="Email "
                 />
                 <input
                   type="url"
                   id="website"
-                  placeholder="Website *"
+                  placeholder="Website"
                   name="website"
                 />
                 <textarea
                   id="message"
                   name="message"
                   rows={5}
-                  placeholder="Message *"
-                  
-                  defaultValue={""}
+                  placeholder="Message "
+                   
                 />
                 <button
                   type="submit"

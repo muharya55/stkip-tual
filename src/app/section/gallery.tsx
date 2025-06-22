@@ -1,7 +1,6 @@
 'use client'; // jika digunakan di app router dan ada interaksi client-side
 
 import React from 'react';
-import Image from 'next/image';
 import CampusCard from 'app/components/campusCard';
 
 interface GalleryItem {

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 // src/app/berita-detail/page.tsx
@@ -7,7 +8,7 @@ export default async function Page({
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
   const slug = searchParams.slug
- 
+  
   return (
     <> 
        <section className="blog-single-simple pt-20px pb-80px">
@@ -15,7 +16,7 @@ export default async function Page({
                 <div className="row">
                 <div className="col-12 col-lg-12 mb-30px mb-lg-0">
                     <div className="blog-single-simple__wrapper">
-                    <img
+                    <Image
                         src="../images/berita/berita-1.jpeg"
                         alt=""
                         className="mb-30px"
