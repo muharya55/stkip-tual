@@ -116,7 +116,9 @@ if(document.readyState == 'complete'){
     var body = document.body;
     var navbarClose = document.querySelector(".navbar-close");
     var closesetNav2ndElements = document.querySelectorAll('.closesetNav2nd');
-
+    console.log('halo disini arya');
+    console.log({barsBtn,navbarCustom,navbarClose});
+    
     function toggleNavbar() {
         navbarCustom.classList.toggle("active");
         body.classList.toggle("set-bars-overlay");

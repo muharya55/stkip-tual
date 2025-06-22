@@ -7,23 +7,21 @@ const footerSections = [
   {
     title: 'Direktorat',
     items: [
-      "Pendidikan", "Kemahasiswaan", "Keuangan", "Umum", "Bisnis", "SDM", "DTI",
-      "Perencanaan", "Kerjasama", "Kantor", "Humas", "International Office", "Manajemen Resiko", "Arsip"
+      "Pendidikan", "Kemahasiswaan", "Manajemen Resiko", "Arsip"
     ],
   },
   {
     title: 'Unit',
     items: [
-      "Lembaga", "LPM", "LPPM", "Website", "Rumah Sakit", "Green Campus", "Lapor",
-      "Arsip UNAND", "Perpustakaan", "Pusat Bahasa", "Laboratorium", "PDK (Pembelajaran di Luar Kampus)",
-      "SPI", "Disabilitas"
+      "Lembaga", "LPM", "LPPM",  "Perpustakaan", "Pusat Bahasa", 
+     
     ],
   },
   {
     title: 'Resources',
     items: [
-      "Direktori eJournal", "Portal iLearn", "Portal Akademik", "Portal e-Office",
-      "Repository", "Direktori Dosen", "Email Institusi", "Sister", "Simanis", "SSO"
+      "Direktori eJournal",  "Portal Akademik", "Portal e-Office",
+      "Repository", "Direktori Dosen"
     ],
   }
 ];
@@ -88,7 +86,7 @@ export default function Footer() {
         <div className="row">
           <div className="footer-layout-1__bottom d-flex flex-wrap align-items-center justify-content-between mt-50px pt-30px pb-30px">
             <p className="transition-all mb-20px mb-md-0">
-              © 2025 Universitas Contoh. All rights reserved.
+              © 2025 STKIP EVAV TUAL. All rights reserved.
             </p>
             <ul className="d-flex align-items-center gap-30px">
               {["Privacy", "Terms", "Sitemap", "Purchase"].map((item, i) => (

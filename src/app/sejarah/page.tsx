@@ -1,4 +1,5 @@
 import Sidebar from 'app/components/sidebar'
+import { MenuItems1 } from 'app/data/menu'
  
 const Sejarah = () => {
   return (
@@ -11,17 +12,34 @@ const Sejarah = () => {
             <div className="col-xl-3 col-lg-4">
               <div className="sidebar sidebar-left">
                 <div className="widget">
-                  <Sidebar />
+                  <Sidebar data={MenuItems1} />
                 </div>
               </div>
             </div>
 
             {/* Main Content */}
             <div className="col-12 col-lg-9 mb-30px mb-lg-0">
-              <h1 className="fs-30 fw-semibold mb-40px">
-                Sejarah STKIP Persada Evav Tual
-              </h1>
-
+               
+            <h3 className="text-primary fw-bold mb-2">Sejarah STKIP Persada Evav Tual</h3>
+            <div
+              className="border-bottom border-primary"
+              style={{
+                borderWidth: "3px",
+                position: "relative",
+                marginBottom: "30px",
+              }}
+            >
+            <div
+                style={{
+                  width: "100px",
+                  height: "3px",
+                  backgroundColor: "gold",
+                  position: "absolute",
+                  bottom: 0,
+                }}
+              >
+            </div>
+          </div>
               <div className="events-details__wrapper d-flex flex-wrap">
                 <div className="text-justify mb-5" style={{ lineHeight: "27px" }}>
                   <p style={{ textIndent: 50 }}>

@@ -1,4 +1,5 @@
 import Sidebar from 'app/components/sidebar'
+import { MenuItems1 } from 'app/data/menu'
 import Image from 'next/image'
  
 const StrukturOrganisasi = () => {
@@ -11,16 +12,34 @@ const StrukturOrganisasi = () => {
                 <div className="sidebar sidebar-left">
                   <div className="widget">
                   
-                      <Sidebar/>
+                  <Sidebar data={MenuItems1} />
                   </div>
                 </div>
          </div>
    
    
          <div className="col-12  col-lg-9 mb-30px mb-lg-0">
-             <h1 className="fs-30 fw-semibold mb-40px">
-                          Struktur Organisi STKIP TUAL
-                        </h1>
+            
+           <h3 className="text-primary fw-bold mb-2">Struktur Organisi STKIP TUAL</h3>
+            <div
+              className="border-bottom border-primary"
+              style={{
+                borderWidth: "3px",
+                position: "relative",
+                marginBottom: "30px",
+              }}
+            >
+            <div
+                style={{
+                  width: "100px",
+                  height: "3px",
+                  backgroundColor: "gold",
+                  position: "absolute",
+                  bottom: 0,
+                }}
+              >
+            </div>
+          </div>
                         <div className="events-details__wrapper d-flex flex-wrap">
                  
                            <Image  width={2000}

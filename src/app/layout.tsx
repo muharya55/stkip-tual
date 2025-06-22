@@ -139,9 +139,9 @@ export default function RootLayout({
           <Image
               width={200}
               height={100}
-            src="/images/logo/bg-univ.jpeg"
-            style={{ backgroundColor: "#000" }}
-            alt="Logo"
+              src="/images/logo/bg-univ.jpeg"
+              style={{ backgroundColor: "#000" }}
+              alt="Logo"
             
             className="navbar__logo bg-transparent w-50"
           />
@@ -151,35 +151,60 @@ export default function RootLayout({
         <div className="bars-btn d-none">
           <span className="iconify fs-24" data-icon="fe:bar" />
         </div>
-        <div className="navbar-custom">
+        <div className="navbar-custom active">
           <div className="">
           <ul className="navbar-nav gap-22px justify-content-center">
-              <li className="nav-item main-dropdown-menu">
-                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+              <li className="nav-item navbar-close d-none">
+                <i className="iconify fs-12" data-icon="teenyicons:left-outline" />
+                <span>Close</span>
+              </li>
+              {/* <li className="nav-item main-dropdown-menu demo-submenu-rsv2">
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all setNav2nd">
                   <>
                   <span className="">Tentang STKIP</span>
                   
                   <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
                   </>
                 </Link>
-                <ul className="main-dropdown-menu__sub">
+                <ul className="main-dropdown-menu__sub" >
+                   <li className="nav-item closesetNav2nd d-none">
+                      <i className="iconify fs-12" data-icon="teenyicons:left-outline"></i>
+                      <span>Tentang STKIP</span>
+                  </li>
                   <li className="main-dropdown-menu__sub_items"><Link href="/sejarah">Sejarah Singkat</Link></li>
                   <li className="main-dropdown-menu__sub_items"><Link href="/visimisi">Visi, Misi, Tujuan dan Sasaran</Link></li>
                   <li className="main-dropdown-menu__sub_items"><Link href="/struktur-organisasi">Struktur Organisasi</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="/pimpinan">Pimpinan</Link></li>
+                </ul>
+              </li> */}
+              <li className="nav-item main-dropdown-menu"> 
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all setNav2nd">
+                  Tentang STKIP
+                  <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
+                </Link>
+                <ul className="main-dropdown-menu__sub">
+                  <li className="nav-item closesetNav2nd d-none">
+                      <i className="iconify fs-12" data-icon="teenyicons:left-outline"></i>
+                      <span>Tentang STKIP</span>
+                  </li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/sejarah">Sejarah Singkat</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/visimisi">Visi, Misi, Tujuan dan Sasaran</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/struktur-organisasi">Struktur Organisasi</Link></li>
                 </ul>
               </li>
-
-              <li className="nav-item main-dropdown-menu">
-                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+              <li className="nav-item main-dropdown-menu"> 
+                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all setNav2nd">
                   Akademik
                   <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
                 </Link>
                 <ul className="main-dropdown-menu__sub">
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">Prodi</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">Informasi Biaya Pendidikan</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">Kalender Akademik</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">Buku Pedoman Akademik</Link></li>
+                  <li className="nav-item closesetNav2nd d-none">
+                      <i className="iconify fs-12" data-icon="teenyicons:left-outline"></i>
+                      <span>Akademik</span>
+                  </li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/program-studi">Prodi</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/biaya-pendidikan">Informasi Biaya Pendidikan</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/kalender-akademik">Kalender Akademik</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/panduan-akademik">Buku Pedoman Akademik</Link></li>
                 </ul>
               </li>
 
@@ -189,8 +214,8 @@ export default function RootLayout({
                   <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
                 </Link>
                 <ul className="main-dropdown-menu__sub">
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">LPM</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">LP2M</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">LPM (Coming Soon)</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="#">LP2M (Coming Soon)</Link></li>
                 </ul>
               </li>
 
@@ -200,27 +225,27 @@ export default function RootLayout({
                   <i className="iconify fs-12 ml-10" data-icon="grommet-icons:down" />
                 </Link>
                 <ul className="main-dropdown-menu__sub">
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">Akademik</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">Keuangan</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">TI</Link></li>
-                  <li className="main-dropdown-menu__sub_items"><Link href="#">SDM</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/biro-akademik">Biro Akademik</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/biro-keuangan">Keuangan</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/biro-informasi">TI</Link></li>
+                  <li className="main-dropdown-menu__sub_items"><Link href="/biro-sdm">SDM</Link></li>
                 </ul>
               </li>
 
               <li className="nav-item">
-                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="/kemahasiswaan" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Kemahasiswaan
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link href="#" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="/unduhan" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Download
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link href="contact.html" className="d-block pt-25px pb-25px fw-medium transition-all">
+                <Link href="/kontak" className="d-block pt-25px pb-25px fw-medium transition-all">
                   Kontak
                 </Link>
               </li>

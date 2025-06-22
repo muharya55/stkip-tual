@@ -3,19 +3,23 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function Sidebar() {
-  const pathname = usePathname()
 
-  const menuItems = [
-    { label: 'Sejarah Singkat', href: '/sejarah' },
-    { label: 'Visi , Misi , Tujuan dan Sasaran', href: '/visimisi' },
-    { label: 'Struktur Organisasi', href: '/struktur-organisasi' },
-    { label: 'Pimpinan', href: '/pimpinan' },
-  ]
+type MenuItem = {
+  label: string;
+  href: string;
+};
+ 
+interface SidebarProps {
+  data: MenuItem[];
+}
+
+export default function Sidebar({ data }: SidebarProps) {
+  const pathname = usePathname();
+
 
   return (
     <ul className="nav service-menu">
-      {menuItems.map((item) => (
+      {data.map((item) => (
         <li key={item.href} className={pathname === item.href ? 'active' : ''}>
           <Link href={item.href}>{item.label}</Link>
         </li>

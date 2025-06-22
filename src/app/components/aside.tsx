@@ -70,11 +70,11 @@ const latestPosts: Post[] = [
 
 const Aside: React.FC = () => {
   return (
-    <aside className="col-12 col-lg-3">
+    <aside className="col-12 col-lg-4">
       <div className="blog-page__Aside">
         {/* Popular Courses */}
         <div className="blog-page__popular mb-30px">
-          <h6 className="fs-18 text-uppercase fw-semibold mb-20px">Popular Courses</h6>
+          <h6 className="fs-18 text-uppercase fw-semibold mb-20px">Info</h6>
           {popularCourses.map((course, index) => (
             <div key={index} className="popular-courses d-flex gap-20px mb-20px">
               <div className="popular-courses_thumb">
@@ -102,7 +102,7 @@ const Aside: React.FC = () => {
 
         {/* Latest Posts */}
         <div className="blog-page__latest mb-30px">
-          <h6 className="fs-18 text-uppercase fw-semibold mb-20px">Latest Posts</h6>
+          <h6 className="fs-18 text-uppercase fw-semibold mb-20px">Agenda</h6>
           {latestPosts.map((post, index) => (
             <div key={index} className="latest-posts d-flex gap-20px mb-20px">
               <div className="latest-posts_thumb">

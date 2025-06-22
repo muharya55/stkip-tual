@@ -1,4 +1,5 @@
 import Sidebar from 'app/components/sidebar'
+import { MenuItems1 } from 'app/data/menu'
  
 const StrukturOrganisasi = () => {
   return (
@@ -10,7 +11,8 @@ const StrukturOrganisasi = () => {
                 <div className="sidebar sidebar-left">
                   <div className="widget">
                   
-                      <Sidebar/>
+                    <Sidebar data={MenuItems1} />
+                     
                   </div>
                 </div>
          </div>
@@ -22,6 +24,26 @@ const StrukturOrganisasi = () => {
   </h1> */}
 
   {/* Visi */}
+  <h3 className="text-primary fw-bold mb-2">Visi , Misi dan Sasaran STKIP Persada Evav Tual</h3>
+            <div
+              className="border-bottom border-primary"
+              style={{
+                borderWidth: "3px",
+                position: "relative",
+                marginBottom: "30px",
+              }}
+            >
+            <div
+                style={{
+                  width: "100px",
+                  height: "3px",
+                  backgroundColor: "gold",
+                  position: "absolute",
+                  bottom: 0,
+                }}
+              >
+            </div>
+          </div>
   <h2 className="fs-20 fw-semibold mb-40px text-biru" style={{ color: "#356DF1" }}>
     <strong>Visi STKIP Persada Evav Tual</strong>
   </h2>

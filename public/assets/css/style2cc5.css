@@ -10047,10 +10047,10 @@ body.set-form-register-overlay.cursor-pointer-x {
   opacity: 0.5;
   filter: grayscale(100%);
 }
-.partner-layout-1 img:hover {
+/* .partner-layout-1 img:hover {
   opacity: 1;
   filter: none;
-}
+} */
 
 .testimonial-layout-1__top {
   max-width: 490px;
@@ -11927,9 +11927,9 @@ body.set-form-register-overlay.cursor-pointer-x {
 
 .faqs-part-three .contact-box {
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
-  margin-top: -80px;
+  /* margin-top: -80px; */
   z-index: 3;
-  position: relative;
+  /* position: relative; */
   background: #fff;
 }
 .faqs-part-three .contact-box_left {
@@ -19628,5 +19628,14 @@ body.cursor-pointer-x .search-overlay {
 .text-biru {
   color: var(--regal-blue);
 }
+.grid-gallery_item img {
+  transition: transform 0.3s ease;
+}
 
+.grid-gallery_item:hover img {
+  transform: scale(1.25);
+}
+ul li.with-list{
+  list-style: unset;
+}
 /* smooth swiper */ 

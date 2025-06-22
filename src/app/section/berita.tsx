@@ -15,35 +15,35 @@ const campusItems: CampusItem[] = [
     image: '/images/berita/berita-1.jpeg',
     description:
       'A residential campus with diverse housing, exceptional dining, health care and over 600 student',
-    link: '#',
+    link: '/berita-detail?slug=seminar-proposal',
   },
   {
     title: 'Arts & Culture',
     image: '/images/latest-new/latest-new-02.png',
     description:
       'A residential campus with diverse housing, exceptional dining, health care and over 600 student',
-    link: '#',
+    link: '/berita-detail?slug=seminar-proposal',
   },
   {
     title: 'Recreation & Wellness',
     image: '/images/latest-new/latest-new-03.png',
     description:
       'A residential campus with diverse housing, exceptional dining, health care and over 600 student',
-    link: '#',
+    link: '/berita-detail?slug=seminar-proposal',
   },
   {
     title: 'Recreation & Wellness',
     image: '/images/latest-new/latest-new-03.png',
     description:
       'A residential campus with diverse housing, exceptional dining, health care and over 600 student',
-    link: '#',
+    link: '/berita-detail?slug=seminar-proposal',
   },
   {
     title: 'Recreation & Wellness',
     image: '/images/latest-new/latest-new-03.png',
     description:
       'A residential campus with diverse housing, exceptional dining, health care and over 600 student',
-    link: '#',
+    link: '/berita-detail?slug=seminar-proposal',
   },
   {
     title: 'Recreation & Wellness',
@@ -58,12 +58,13 @@ const BeritaSection: React.FC = () => {
   return (
     <section className="uni-campus pt-80px pb-80px">
       <div className="container">
-        <h4 className="fw-medium text-center mb-5px">Campus Life</h4>
+        {/* <h4 className="fw-medium text-center mb-5px">Berita</h4>
         <p className="text-center mb-40px">
           Building a vibrant community of creative and accomplished people
-        </p>
+        </p> */}
         <div className="row gy-30px">
-            <div className="col-12 col-lg-9 mb-30px mb-lg-0">
+            <div className="col-12 col-lg-8 mb-30px mb-lg-0">
+              <h3 className="fs-22 text-uppercase fw-semibold mb-14px">Berita</h3>
                 <div className="row">
                     {campusItems.map((item, index) => (
                         <div key={index} className="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
