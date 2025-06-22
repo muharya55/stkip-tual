@@ -2,7 +2,7 @@ import FakultasCard from "app/components/fakultasCard";
 import Sidebar from "app/components/sidebar";
 import {  MenuItems2 } from "app/data/menu";
 import { Key } from "react";
-export const fakultasData = [
+const fakultasData = [
   {
     kode: "FKIP",
     nama: "Fakultas Keguruan dan Ilmu Pendidikan",
