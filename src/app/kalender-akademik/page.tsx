@@ -14,7 +14,7 @@ interface JadwalAkademik {
   tanggal: string;
 }
 
-export const uktList: JadwalAkademik[] = [
+const uktList: JadwalAkademik[] = [
   {
     "no": 1,
     "kegiatan": "Registrasi Administrasi bagi mahasiswa lama (pembayaran UKT/SPP)",
