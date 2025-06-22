@@ -5,7 +5,7 @@ import React from 'react'
 type PageProps = {
   searchParams?: { [key: string]: string | string[] };
 };
-export default async function Page({ searchParams }: PageProps) {
+export default function Page({ searchParams }: PageProps) {
   const slug = searchParams?.slug
   
   return (
