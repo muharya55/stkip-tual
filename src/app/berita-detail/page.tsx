@@ -2,12 +2,11 @@ import Image from 'next/image'
 import React from 'react'
 
 // src/app/berita-detail/page.tsx
-export default async function Page({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined }
-}) {
-  const slug = searchParams.slug
+type PageProps = {
+  searchParams?: { [key: string]: string | string[] | undefined };
+};
+export default async function Page({ searchParams }: PageProps) {
+  const slug = searchParams?.slug
   
   return (
     <> 
