@@ -1,7 +1,3 @@
-import FakultasCard from "app/components/fakultasCard";
-import Sidebar from "app/components/sidebar";
-import {  MenuItems3 } from "app/data/menu";
-import Image from "next/image";
  
 // app/data/sidebarMenu.ts
 
