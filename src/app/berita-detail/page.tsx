@@ -3,10 +3,10 @@ import React from 'react'
 
 // src/app/berita-detail/page.tsx 
 type PageProps = {
-  searchParams?: { [key: string]: string | string[] };
+  searchParams: { [key: string]: string | string[] };
 };
-export default function Page({ searchParams }: PageProps) {
-  const slug = searchParams?.slug
+export default async function Page({ searchParams }: PageProps) {
+  const slug = searchParams.slug
   
   return (
     <> 
