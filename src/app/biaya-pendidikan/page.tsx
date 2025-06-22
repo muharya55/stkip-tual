@@ -15,7 +15,7 @@ type UktData = {
   };
 };
 
-export const uktList: UktData[] = [
+const uktList: UktData[] = [
   {
     programStudi: "Pendidikan Bahasa dan Sastra Indonesia",
     ukt: {
