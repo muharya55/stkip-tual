@@ -2,9 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 // src/app/berita-detail/page.tsx 
-type PageProps = {
-  searchParams: { [key: string]: string | string[] };
-};
+ 
 export default async function BeritaDetail(props: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
