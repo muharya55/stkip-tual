@@ -5,9 +5,12 @@ import React from 'react'
 type PageProps = {
   searchParams: { [key: string]: string | string[] };
 };
-export default async function Page({ searchParams }: PageProps) {
-  const slug = searchParams.slug
-  
+export default async function BeritaDetail(props: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const searchParams = await props.searchParams;
+  const slug = searchParams.slug;
+
   return (
     <> 
        <section className="blog-single-simple pt-20px pb-80px">
