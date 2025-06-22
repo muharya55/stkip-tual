@@ -7,12 +7,6 @@ export type MenuItem = {
   label: string;
   href: string;
 };
-
-interface JadwalAkademik {
-  no: number;
-  kegiatan: string;
-  tanggal: string;
-}
  
 
 const PanduanAkademik = () => {
