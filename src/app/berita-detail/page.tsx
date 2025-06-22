@@ -1,11 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 
-// src/app/berita-detail/page.tsx
-type PageProps = {
-  searchParams?: { [key: string]: string | string[] };
-};
-export default async function Page({ searchParams }: PageProps) {
+// src/app/berita-detail/page.tsx 
+export default async function Page({ searchParams }: any) {
   const slug = searchParams?.slug
   
   return (
