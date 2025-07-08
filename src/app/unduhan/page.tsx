@@ -2,11 +2,7 @@
 // app/data/sidebarMenu.ts
 
 import Image from "next/image";
-
-type MenuItem = {
-  label: string;
-  href: string;
-};
+ 
  // data.ts
 interface DownloadItem {
   title: string;

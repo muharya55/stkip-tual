@@ -3,10 +3,7 @@
 
 import Image from "next/image";
 
-interface OrgData {
-  fakultas: string;
-  organisasi: string[];
-}
+ 
 const organisasiList: string[] = [
   'DPM F. Agama Islam',
   'BEM F. Agama Islam',

@@ -2,8 +2,7 @@
 // app/data/sidebarMenu.ts
 
 import Image from "next/image";
-import Link from "next/link";
-
+ 
 export type MenuItem = {
   label: string;
   href: string;

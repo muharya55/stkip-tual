@@ -109,13 +109,7 @@ const groupedTeam: Record<string, TeamMember[]> = team.reduce((acc, member) => {
 }, {} as Record<string, TeamMember[]>);
 
 const StrukturOrganisasi = () => {
-  const pimpinan = team.filter((member) =>
-    member.jabatan.toLowerCase().includes("ketua")
-  );
-
-  const lainnya = team.filter(
-    (member) => !member.jabatan.toLowerCase().includes("ketua")
-  );
+ 
 
   return (
     <section className="events-details mt-40px mb-80px">
@@ -181,7 +175,7 @@ const StrukturOrganisasi = () => {
                           <div className="fw-bold">{member.nama}</div>
                           <div className="text-muted small">{member.jabatan}</div>
                           {member.motivasi && (
-                            <div className="fst-italic small mt-1">"{member.motivasi}"</div>
+                            <div className="fst-italic small mt-1">{member.motivasi}</div>
                           )}
                         </div>
                       ))}
