@@ -74,30 +74,30 @@ const Kontak = () => {
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Name "
+                  placeholder="Nama "
                 />
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email "
+                  type="text"
+                  id="nim"
+                  name="nim"
+                  placeholder="Nim "
                 />
                 <input
-                  type="url"
-                  id="website"
-                  placeholder="Website"
-                  name="website"
+                  type="text"
+                  id="jurusan"
+                  placeholder="Jurusan"
+                  name="jurusan"
                 />
                 <textarea
-                  id="message"
-                  name="message"
+                  id="pesan"
+                  name="pesan"
                   rows={5}
-                  placeholder="Message "
+                  placeholder="Pesan "
                    
                 />
                 <button
                   type="submit"
-                  className="button button-type-02 fw-medium text-uppercase transition-all"
+                  className="button text-white button-type-02 fw-medium text-uppercase transition-all"
                 >
                   Submit Now
                 </button>

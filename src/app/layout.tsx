@@ -74,17 +74,59 @@ export default function RootLayout({
                 </Link>
               </span>
             </div>
-            <div className="notification__acc d-flex align-items-center gap-5px">
-              <i
-                className="iconify fs-18"
-                data-icon="fluent:people-48-regular"
-              />
-              <span className="d-none d-xl-block">Demo account</span>
-            </div>
+            
           </div>
         </div>
         <div className="col-6 col-md-7">
           <div className="d-flex align-items-center justify-content-end">
+            {/* <div className=""></div> */}
+            <div className="px-3">
+              <span className="iconify fs-24 mr-10px " data-icon="entypo-social:facebook" >
+                <Link
+                  href="https://html.thimpress.com/cdn-cgi/l/email-protection"
+                  className="__cf_email__"
+                  data-cfemail="04676b6a7065677044706c6d6974766177772a676b69"
+                >
+                  [email&nbsp;protected]
+                </Link>
+              </span>
+              <span className="iconify fs-24 mr-10px" data-icon="entypo-social:instagram" >
+                <Link
+                  href="https://html.thimpress.com/cdn-cgi/l/email-protection"
+                  className="__cf_email__"
+                  data-cfemail="04676b6a7065677044706c6d6974766177772a676b69"
+                >
+                  [email&nbsp;protected]
+                </Link>
+              </span>
+              <span className="iconify fs-24 mr-10px" data-icon="entypo-social:youtube" >
+                <Link
+                  href="https://html.thimpress.com/cdn-cgi/l/email-protection"
+                  className="__cf_email__"
+                  data-cfemail="04676b6a7065677044706c6d6974766177772a676b69"
+                >
+                  [email&nbsp;protected]
+                </Link>
+              </span>
+              <span className="iconify fs-24 mr-10px" data-icon="tabler:brand-whatsapp" >
+                <Link
+                  href="https://html.thimpress.com/cdn-cgi/l/email-protection"
+                  className="__cf_email__"
+                  data-cfemail="04676b6a7065677044706c6d6974766177772a676b69"
+                >
+                  [email&nbsp;protected]
+                </Link>
+              </span>
+              <span className="iconify fs-24 mr-10px" data-icon="tabler:brand-gmail" >
+                <Link
+                  href="https://html.thimpress.com/cdn-cgi/l/email-protection"
+                  className="__cf_email__"
+                  data-cfemail="04676b6a7065677044706c6d6974766177772a676b69"
+                >
+                  [email&nbsp;protected]
+                </Link>
+              </span>
+            </div> 
             <ul className="notification-page d-flex align-items-center">
               <li className="d-none d-xl-block">
                 <Link href="#">Campus</Link>
@@ -102,29 +144,7 @@ export default function RootLayout({
                 <Link href="#">Alumni</Link>
               </li>
             </ul>
-            <ul className="notification-auth d-flex align-items-center">
-              {/* <li>
-                <Link href="#" className="search__icon">
-                  <i
-                    className="iconify fs-18 cursor-pointer"
-                    data-icon="iconamoon:search"
-                  />
-                </Link>
-              </li> */}
-              <li>
-                <Link href="#" className="handle-register">
-                  <i
-                    className="iconify fs-18"
-                    data-icon="ant-design:user-add-outlined"
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="handle-login">
-                  <i className="iconify fs-18" data-icon="lucide:user" />
-                </Link>
-              </li>
-            </ul>
+            
           </div>
         </div>
       </div>
@@ -151,7 +171,7 @@ export default function RootLayout({
         <div className="bars-btn d-none">
           <span className="iconify fs-24" data-icon="fe:bar" />
         </div>
-        <div className="navbar-custom active">
+        <div className="navbar-custom">
           <div className="">
           <ul className="navbar-nav gap-22px justify-content-center">
               <li className="nav-item navbar-close d-none">

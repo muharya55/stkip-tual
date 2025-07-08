@@ -1,6 +1,8 @@
+import Link from "next/link";
 import AlumniSection from "./section/alumni";
 import BeritaSection from "./section/berita";
 import GallerySection from "./section/gallery";
+import VideoSection from "./section/video";
 
  
 export default function Home() {
@@ -40,10 +42,10 @@ export default function Home() {
                   WEBSITE STKIP TUAL
                   </h1>
                   <h3 className="fs-30 fw-bolder text-uppercase text-white mb-40px wow flipInX">Gerbang Menuju Pengabdian</h3>
-                  <a href="#" className="uni-button transition-all">
+                  <Link href="#" className="uni-button transition-all">
                     
                     Daftar Sekarang
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -90,6 +92,7 @@ export default function Home() {
       
       <AlumniSection/>
       <GallerySection/>
+      <VideoSection/>
       
     </div>
     </>

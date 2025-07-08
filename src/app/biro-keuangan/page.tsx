@@ -44,7 +44,22 @@ const BiroKeuangan = () => {
           </div>
 
           <div className="container">
-            <div className="row">
+            <div className="row d-flex justify-content-evenly bg-alice" >
+              <div className="col-md-5 mt-4" >
+               <strong > <h4 className="mt-2">Kepala Biro</h4></strong>
+               <div className="mt-3"></div>
+               <div className="">
+                <p>Drs. Nana Sujana, M.SI.</p>
+                <p>nanasuajana@staff.unsil.ac.id.</p>
+                <p>Gd. Rektorat Unsil Jln. Siliwangi No. 24 Kahuripan Tasikmalaya 46115.</p>
+                <p>(0265)330634.</p>
+               </div>
+              </div>
+              <div className="col-md-3 mt-4">
+                <Image  width={1500}
+                          height={800} alt="Struktur" style={{width:"11rem"}} className="mt-2 mb-5" src="/images/nana-sujana.png"  /></div>
+            </div>
+            <div className="row mt-5">
             Biro Akademik dan Kemahasiswaan (BAK) merupakan unsur pelaksana administrasi yang melaksanakan pelayanan teknis dan administrasi kepada seluruh unsur di lingkungan Sekolah Tinggi Evav Persada Tual. Berkenaan dengan hal tersebut BAK mempunyai tugas melaksanakan pelayanan di bidang akademik dan pembinaan kemahasiswaan dan alumni dengan fungsi terhadap :
             </div>
             <ul className="mt-3">  
@@ -55,9 +70,6 @@ const BiroKeuangan = () => {
               <li>5. Melaksanakan pelaporan kegiatan akademik secara berkala ke Kemenristek Dikti/Kopertis/Kopertais.</li>
             </ul>
           </div>
-          <h3 className="text-center mt-5">Struktur Organisasi</h3>
-          <Image  width={2000}
-            height={1000} alt="Struktur" className="mt-2 mb-5" src="/images/gallery/struktur-biro-akademik.jpg"  />
         </div>
       </div>
     </div>

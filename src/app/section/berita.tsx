@@ -95,6 +95,23 @@ const BeritaSection: React.FC = () => {
                         </div>
                         </div>
                     ))}
+                    <div className="pagination">
+                          <a href="#" className="pagination-prev pagination__page-numbers">
+                          <i className="iconify fs-18" data-icon="mingcute:left-line" />
+                          </a>
+                          <a href="#" className="pagination__page-numbers active">
+                          1
+                          </a>
+                          <a href="#" className="pagination__page-numbers">
+                          2
+                          </a>
+                          <a href="#" className="pagination__page-numbers">
+                          3
+                          </a>
+                          <a href="#" className="pagination-next pagination__page-numbers">
+                          <i className="iconify fs-18" data-icon="mingcute:right-line" />
+                          </a>
+                      </div>
                 </div>
             </div>
              <Aside/>

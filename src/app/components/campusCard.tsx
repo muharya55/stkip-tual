@@ -21,7 +21,7 @@ const CampusCard = ({
           />
         </div>
         <div
-          className="bg-warning text-center fw-bold py-3 position-relative"
+          className="bg-warning text-white text-center fw-bold py-3 position-relative"
           style={{
             borderBottomLeftRadius: "20px",
             borderBottomRightRadius: "20px",
